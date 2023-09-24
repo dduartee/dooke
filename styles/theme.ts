@@ -1,6 +1,10 @@
 import { extendTheme } from "@chakra-ui/react"
 
 const theme = extendTheme({
+    config: {
+        initialColorMode: "light",
+        useSystemColorMode: false,
+    },
     colors: {
         brand: {
             50: "#E0F2F1",
@@ -14,7 +18,7 @@ const theme = extendTheme({
             800: "#033D32",
             900: "#002A2A", // Cor mais escura
         }
-      },
+    },
     fonts: {
         heading: `'Mooli', sans-serif`,
         // body: `'Mooli', sans-serif`,
