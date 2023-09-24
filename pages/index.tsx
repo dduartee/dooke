@@ -41,8 +41,8 @@ export default function Home() {
         </Box>
       </Box>
       <br />
-      <Box display={"flex"} justifyContent={"flex-start"} alignItems={"center"} flexDirection={"column"} mb={"3rem"}>
-        <Heading fontSize={[25, 30]} textAlign={"center"}>Sobre nós</Heading>
+      <Box display={"flex"} justifyContent={"flex-start"} alignItems={"center"} flexDirection={"column"} mb={"3rem"} id='about'>
+        <Heading fontSize={[25, 30]} textAlign={"center"} >Sobre nós</Heading>
         <Box display={"flex"} flexDirection={["column", "column", "column", "row"]} justifyContent={"space-evenly"} alignItems={"center"} width={"100%"}>
           <Box maxWidth={"1000px"} display={"flex"} alignItems={"center"} p={5} textAlign={'justify'}>
             <Text fontSize={["1.1rem", "1.3rem"]}>Somos acadêmicos do Oeste de Santa Catarina, apaixonados por robótica e programação. Através da Dooke Education, buscamos capacitar jovens para enfrentar os desafios tecnológicos do futuro, proporcionando oportunidades práticas de aprendizado.</Text>
