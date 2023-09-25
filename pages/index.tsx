@@ -13,7 +13,7 @@ export default function Home() {
       <DookeHeader />
       <Panorama />
       <Box display={"flex"} justifyContent={"center"} alignItems={"center"} flexDirection={"column"} mb={"5rem"}>
-        <Heading fontSize={[25, 30]} textAlign={"center"} mb={"3rem"}>Por que Escolher a Dooke Training?</Heading>
+        <Heading fontSize={[25, 30]} textAlign={"center"} mb={"3rem"}>Por que Escolher a Dooke Education?</Heading>
         <Box display={"flex"} flexDirection={["column", "column", "column", "row"]} justifyContent={"space-evenly"} alignItems={"center"} width={"100%"}>
           <Box display={"flex"} flexDirection={"column"} alignItems={"center"}>
             <Image src={"/img/snct/_GBP2378.jpg"} width={"90%"} maxWidth={"500px"} borderRadius={"20px"} boxShadow={"2xl"} mb={3} />
@@ -69,7 +69,7 @@ function Panorama() {
           <Text fontSize={[20, 20, 25]} textAlign={"center"}>Preparando os estudantes do ensino médio para o futuro com experiências práticas em robótica e programação.</Text>
         </Box>
       </Box>
-      <Box width={"100%"} height={"700px"} overflow={"hidden"} backgroundImage={"/bg.svg"} maxWidth={"1440px"} />
+      <Box width={"100%"} height={"800px"} overflow={"hidden"} backgroundImage={"/bg.svg"} maxWidth={"100vw"} />
 
     </Box>
   )
