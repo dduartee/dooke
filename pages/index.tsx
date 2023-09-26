@@ -59,10 +59,10 @@ function Panorama() {
     <Box height={"100vh"} color={"#fff"} mt={3}>
       <Box
         position={"absolute"}
-        display={"flex"} alignItems={"center"} flexDir={"column"}
+        display={"flex"} alignItems={"center"} flexDir={"column"} justifyContent={"center"}
         height="90vh" width="100%" padding={4}
       >
-        <Heading textAlign={"center"} fontSize={[25, 30, 35]} backgroundColor={"brand.900"} padding={4} borderRadius={"10px"} maxHeight={"100px"} marginTop={"100px"}>
+        <Heading textAlign={"center"} fontSize={[25, 30, 35]} backgroundColor={"brand.900"} padding={4} borderRadius={"10px"} maxHeight={"100px"}>
           Inicie a aventura com a Dooke!
         </Heading>
         <Box backgroundColor={"brand.900"} padding={4} minWidth="200px" maxWidth={"400px"} borderRadius={"10px"} marginTop={"40px"}>
@@ -76,10 +76,13 @@ function Panorama() {
 }
 
 function DookeFooter() {
-  // make an footer
+  const goTop = () => {
+    window.scrollTo(0, 0)
+  }
   return (
-    <Box backgroundColor={"#1e1e1e"} padding={2} display={"flex"} color={"#fff"} alignItems="center" justifyItems={"center"} flexDirection="column">
-      <Heading size={'md'} margin={3}>&copy; 2023 Dooke Education</Heading>
+    <Box backgroundColor={"#1e1e1e"} padding={2} display={"flex"} color={"#fff"} alignItems="center" justifyItems={"center"} flexDirection="column" textAlign={"center"}>
+      <Image src={"/dookeEducation.png"} width={"100px"} height={"auto"} onClick={() => goTop()}/>
+      {/* <Heading size={'md'} margin={3}>&copy; 2023</Heading> */}
     </Box>
   )
 }
