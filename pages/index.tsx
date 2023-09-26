@@ -5,10 +5,10 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Home | Dooke Education</title>
-        <meta name="description" content="Venha para a dooke!" />
+        <title>Inicio | Dooke Education</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
+        <meta property="og:title" content="Inicio | Dooke Education" />
       </Head>
       <DookeHeader />
       <Panorama />
@@ -83,7 +83,7 @@ function DookeFooter() {
   }
   return (
     <Box backgroundColor={"#1e1e1e"} padding={2} display={"flex"} color={"#fff"} alignItems="center" justifyItems={"center"} flexDirection="column" textAlign={"center"}>
-      <Image src={"/dookeEducation.png"} width={"100px"} height={"auto"} onClick={() => goTop()}/>
+      <Image src={"/dookeEducation.png"} width={"100px"} height={"auto"} onClick={() => goTop()} />
       <Text size={'s'} margin={3}>&copy; 2023</Text>
     </Box>
   )
