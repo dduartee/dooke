@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Dooke</title>
+        <title>Home | Dooke Education</title>
         <meta name="description" content="Venha para a dooke!" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
@@ -60,7 +60,7 @@ function Panorama() {
       <Box
         position={"absolute"}
         display={"flex"} alignItems={"center"} flexDir={"column"}
-        height="350px" width="100%" padding={4}
+        height="90vh" width="100%" padding={4}
       >
         <Heading textAlign={"center"} fontSize={[25, 30, 35]} backgroundColor={"brand.900"} padding={4} borderRadius={"10px"} maxHeight={"100px"} marginTop={"100px"}>
           Inicie a aventura com a Dooke!
@@ -69,7 +69,7 @@ function Panorama() {
           <Text fontSize={[20, 20, 25]} textAlign={"center"}>Preparando os estudantes do ensino médio para o futuro com experiências práticas em robótica e programação.</Text>
         </Box>
       </Box>
-      <Box width={"100%"} height={"800px"} overflow={"hidden"} backgroundImage={"/bg.svg"} maxWidth={"100vw"} />
+      <Box width={"100%"} height={"90vh"} overflow={"hidden"} backgroundImage={"/bg.svg"} maxWidth={"100vw"} />
 
     </Box>
   )
