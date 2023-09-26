@@ -14,24 +14,26 @@ export default function Home() {
       <Panorama />
       <Box display={"flex"} justifyContent={"center"} alignItems={"center"} flexDirection={"column"} mb={"5rem"}>
         <Heading fontSize={[25, 30]} textAlign={"center"} mb={"3rem"}>Por que Escolher a Dooke Education?</Heading>
-        <Box display={"flex"} flexDirection={["column", "column", "column", "row"]} justifyContent={"space-evenly"} alignItems={"center"} width={"100%"}>
+        <Box display={"flex"} flexDirection={["column", "column", "column", "row"]} justifyContent={"space-evenly"} alignItems={"center"} width={"100%"} maxWidth={"1500px"}>
           <Box display={"flex"} flexDirection={"column"} alignItems={"center"}>
             <Image src={"/img/snct/_GBP2378.jpg"} width={"90%"} maxWidth={"500px"} borderRadius={"20px"} boxShadow={"2xl"} mb={3} />
             <Image src={"/img/snct/_GBP3121.jpg"} width={"90%"} maxWidth={"500px"} borderRadius={"20px"} boxShadow={"2xl"} mb={3} />
+            <Text fontSize={"s"} textUnderlineOffset={"3px"}><u>Créditos: GB Photos</u></Text>
           </Box>
-          <Box maxWidth={"500px"} display={"flex"} alignItems={"center"} p={5} textAlign={'justify'}>
+          <Box width={"90%"} maxWidth={"700px"} display={"flex"} alignItems={"center"} p={5} textAlign={'justify'}>
             <Text fontSize={["1.2rem", "1.5rem"]}>Nossa abordagem prática oferece a você a oportunidade de aprender fazendo, você aprende a programar e a construir robôs de verdade, com o apoio de uma equipe de especialistas em robótica e programação.</Text>
           </Box>
         </Box>
       </Box>
       <Box display={"flex"} justifyContent={"flex-start"} alignItems={"center"} flexDirection={"column"} mb={"5rem"}>
         <Heading fontSize={[25, 30]} textAlign={"center"} mb={"3rem"}>Desafios que Impulsionam o Aprendizado</Heading>
-        <Box display={"flex"} flexDirection={["column", "column", "column", "row"]} justifyContent={"space-evenly"} alignItems={"center"} width={"100%"}>
+        <Box display={"flex"} flexDirection={["column", "column", "column", "row"]} justifyContent={"space-evenly"} alignItems={"center"} width={"100%"} maxWidth={"1500px"}>
           <Box display={"flex"} flexDirection={"column"} alignItems={"center"}>
             <Image src={"/img/snct/_GBP2380.jpg"} width={"90%"} maxWidth={"500px"} borderRadius={"20px"} boxShadow={"2xl"} mb={3} />
             <Image src={"/img/snct/_GBP3134.jpg"} width={"90%"} maxWidth={"500px"} borderRadius={"20px"} boxShadow={"2xl"} mb={3} />
+            <Text fontSize={"s"} textUnderlineOffset={"3px"}><u>Créditos: GB Photos</u></Text>
           </Box>
-          <Box maxWidth={"500px"} p={5} textAlign={'justify'}>
+          <Box width={"90%"} maxWidth={"700px"} display={"flex"} alignItems={"center"} p={5} textAlign={'justify'} flexDirection={"column"}>
             <Text fontSize={["1.1rem", "1.3rem"]}>Nós acreditamos que os desafios são oportunidades de aprendizado.</Text>
             <br />
             <Text fontSize={["1.1rem", "1.3rem"]}>Nossas competições de robótica são momentos emocionantes onde os estudantes testam suas habilidades e resolvem problemas do mundo real.</Text>
@@ -82,7 +84,7 @@ function DookeFooter() {
   return (
     <Box backgroundColor={"#1e1e1e"} padding={2} display={"flex"} color={"#fff"} alignItems="center" justifyItems={"center"} flexDirection="column" textAlign={"center"}>
       <Image src={"/dookeEducation.png"} width={"100px"} height={"auto"} onClick={() => goTop()}/>
-      {/* <Heading size={'md'} margin={3}>&copy; 2023</Heading> */}
+      <Text size={'s'} margin={3}>&copy; 2023</Text>
     </Box>
   )
 }
