@@ -10,7 +10,7 @@ export default function Document() {
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin='anonymous' />
         <link href="https://fonts.googleapis.com/css2?family=Mooli&family=Raleway&display=swap" rel="stylesheet" />
         <link rel="icon" type="image/png" href="/favicon.png" />
-        <meta property="og:image" content="/SEObg.png" /> 
+        <meta property="og:image" content="https://www.dooke.co/SEObg.png" /> 
         <meta property="og:url" content="https://www.dooke.co" />
         <meta property="og:type" content="website" />
         <meta property="og:description" content="Venha para a dooke!" />
