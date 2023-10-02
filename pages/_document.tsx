@@ -4,7 +4,7 @@ import { Html, Head, Main, NextScript } from 'next/document'
 
 export default function Document() {
   return (
-    <Html lang="en">
+    <Html lang="pt-br">
       <Head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin='anonymous' />
@@ -13,9 +13,9 @@ export default function Document() {
         <meta property="og:image" content="https://www.dooke.co/SEObg.png" /> 
         <meta property="og:url" content="https://www.dooke.co" />
         <meta property="og:type" content="website" />
-        <meta property="og:description" content="Venha para a dooke!" />
-        <meta name="description" content="Venha para a dooke!" />
-        {/* <meta property="og:title" content="Dooke Education" /> */}
+        <meta property="og:description" content="Inicie no mundo da robótica com a Dooke!" />
+        <meta name="description" content="Inicie no mundo da robótica com a Dooke!" />
+                {/* <meta property="og:title" content="Dooke Education" /> */}
       </Head>
       <body>
         <ColorModeScript initialColorMode={theme.config.initialColorMode} />

@@ -1,4 +1,4 @@
-import { Box, Heading, Image, Text } from '@chakra-ui/react'
+import { Box, Heading, Image, Text, useDisclosure } from '@chakra-ui/react'
 import Head from 'next/head'
 import DookeHeader from '@/components/Header'
 export default function Home() {
@@ -44,7 +44,13 @@ export default function Home() {
       </Box>
       <br />
       <Box display={"flex"} justifyContent={"flex-start"} alignItems={"center"} flexDirection={"column"} mb={"3rem"} id='about'>
-        <Heading fontSize={[25, 30]} textAlign={"center"} >Sobre nós</Heading>
+        <Heading fontSize={[25, 30]} textAlign={"center"}>Quem somos nós?</Heading>
+        <Box m={"2rem"} mb={0} display={"flex"} flexWrap={"wrap"} justifyContent={"space-evenly"} alignItems={"center"} width={"100%"} maxWidth={"1000px"}>
+          <ImagemIntegrante email="dyenifer1825@icloud.com" src='/img/integrantes/dyenifer.png' alt='Integrante Dyenifer' />
+          <ImagemIntegrante email="anacarolina.ternes@gmail.com" src='/img/integrantes/ana.png' alt='Integrante Ana' />
+          <ImagemIntegrante email="gabrielkleemannd@gmail.com" src='/img/integrantes/gabriel.png' alt='Integrante Gabriel' />
+          <ImagemIntegrante email="luize.c.zatti@gmail.com" src='/img/integrantes/luize.png' alt='Integrante Luize' />
+        </Box>
         <Box display={"flex"} flexDirection={["column", "column", "column", "row"]} justifyContent={"space-evenly"} alignItems={"center"} width={"100%"}>
           <Box maxWidth={"1000px"} display={"flex"} alignItems={"center"} p={5} textAlign={'justify'}>
             <Text fontSize={["1.1rem", "1.3rem"]}>Somos acadêmicos do Oeste de Santa Catarina, apaixonados por robótica e programação. Através da Dooke Education, buscamos capacitar jovens para enfrentar os desafios tecnológicos do futuro, proporcionando oportunidades práticas de aprendizado.</Text>
@@ -55,6 +61,29 @@ export default function Home() {
       <DookeFooter />
     </>
   )
+}
+function ImagemIntegrante(props: { email: string, src: string, alt: string }) {
+  const { isOpen, onOpen, onClose } = useDisclosure();
+  return (
+    <Box
+      onMouseEnter={onOpen}
+      onMouseLeave={onClose}
+      position="relative"
+      transition="transform 0.3s ease-in-out"
+      _hover={{ transform: "scale(1.1)" }}
+      textAlign={"center"}
+      display={"flex"}
+      justifyContent={"center"}
+      m={"2rem"}
+      marginBottom={"3rem"}
+    >
+      <Image src={props.src} alt={props.alt} width={"150px"}  />
+      {isOpen && (
+        <Box position="absolute" bottom={0} marginBottom={"-30px"} color="black" p={2} minWidth={"300px"} borderRadius={"10px"} >
+          <Text fontSize={"s"} textUnderlineOffset={"3px"}><u>{props.email}</u></Text>
+        </Box>
+      )}
+    </Box>)
 }
 function Panorama() {
   return (
@@ -83,6 +112,7 @@ function DookeFooter() {
   }
   return (
     <Box backgroundColor={"#1e1e1e"} padding={2} display={"flex"} color={"#fff"} alignItems="center" justifyItems={"center"} flexDirection="column" textAlign={"center"}>
+      <Text size={'s'} margin={5} color={"gray"}>Contato empresarial: <a href="mailto:contato@dooke.co" style={{textDecoration: 'underline'}}>contato@dooke.co</a></Text>
       <Image src={"/dookeEducation.png"} width={"100px"} height={"auto"} onClick={() => goTop()} />
       <Text size={'s'} margin={3}>&copy; 2023</Text>
     </Box>
