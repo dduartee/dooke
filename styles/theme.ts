@@ -1,10 +1,21 @@
 import { extendTheme } from "@chakra-ui/react"
 
 const theme = extendTheme({
+    components: {
+        Button: {
+            baseStyle: {
+                // ":hover": {
+                //     backgroundColor: "brand.400",
+                //     color: "white",
+                // }
+            }
+        }
+    },
     config: {
         initialColorMode: "light",
         useSystemColorMode: false,
     },
+
     colors: {
         brand: {
             50: "#E0F2F1",
