@@ -1,4 +1,4 @@
-import { AddIcon, ExternalLinkIcon, RepeatIcon, EditIcon, InfoIcon, DownloadIcon } from "@chakra-ui/icons";
+import { AddIcon, ExternalLinkIcon, RepeatIcon, EditIcon, InfoIcon, DownloadIcon, LockIcon } from "@chakra-ui/icons";
 import { Menu, MenuButton, IconButton, MenuList, MenuItem, Image } from "@chakra-ui/react";
 import React, { useEffect } from "react";
 
@@ -26,6 +26,9 @@ export function HeaderMenu() {
                 </MenuItem>
                 <MenuItem icon={<InfoIcon />} as='a' href='#about'>
                     Sobre nós
+                </MenuItem>
+                <MenuItem icon={<LockIcon />} as='a' href='/acesso'>
+                    Acesso
                 </MenuItem>
             </MenuList>
         </Menu>
